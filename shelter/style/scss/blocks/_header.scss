@@ -1,0 +1,15 @@
+.header {
+  padding-top: 60px;
+  background-color: var(--dark-bg);
+  color: var(--text-primary-light);
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    display: block;
+  }
+}

@@ -1,0 +1,24 @@
+.logo {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+
+  &__title {
+    color: var(--color-primary);
+    font-size: 32px;
+    line-height: 35px;
+    font-weight: 400;
+    letter-spacing: 0.06em;
+    margin: 0;
+    margin-bottom: 9px;
+
+  }
+
+  &__subtitle {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    letter-spacing: 0.1em;
+    color: $white;
+    line-height: 15px;
+  }
+}
