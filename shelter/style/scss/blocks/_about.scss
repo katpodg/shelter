@@ -1,0 +1,28 @@
+.about {
+  &__wrapper {
+    padding: 77px 215px 100px 215px;
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+  }
+
+  &__title {
+    padding-top: 18px;
+    margin: 0;
+    margin-bottom: 23px;
+    color: $title-dark;
+  }
+
+  &__text {
+    margin: 0;
+    color: $text-dark;
+
+    &:first-of-type {
+      margin-bottom: 25px;
+    }
+  }
+
+  &__img-container {
+    order: -1;
+  }
+}

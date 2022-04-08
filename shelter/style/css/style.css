@@ -79,6 +79,14 @@
   line-height: 57.2px;
 }
 
+.h3 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 45.5px;
+  letter-spacing: 0.14rem;
+}
+
 .text {
   font-size: 15px;
   line-height: 24px;
@@ -172,7 +180,7 @@
 
 .not-only__wrapper {
   padding-top: 342px;
-  padding-bottom: 243px;
+  padding-bottom: 244px;
   background: url("../../../img/start-screen-puppy.png") no-repeat top 100% right 40px;
 }
 
@@ -191,4 +199,37 @@
 
 .not-only__button {
   color: var(--color-dark);
+}
+
+.about__wrapper {
+  padding: 77px 215px 100px 215px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 120px;
+}
+
+.about__title {
+  padding-top: 18px;
+  margin: 0;
+  margin-bottom: 23px;
+  color: #545454;
+}
+
+.about__text {
+  margin: 0;
+  color: #4c4c4c;
+}
+
+.about__text:first-of-type {
+  margin-bottom: 25px;
+}
+
+.about__img-container {
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
 }
