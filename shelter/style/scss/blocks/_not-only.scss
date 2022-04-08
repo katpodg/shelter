@@ -1,0 +1,29 @@
+.not-only {
+  background-color: var(--dark-bg);
+  background-image: url('../../../img/noise_transparent.png'),
+                    linear-gradient(310deg, $gradient-darker 40%, $gradient-lighter 100%);
+  color: var(--text-primary-light);
+
+  &__wrapper {
+    padding-top: 342px;
+    padding-bottom: 243px;
+    background: url('../../../img/start-screen-puppy.png') no-repeat top 100% right 40px;
+  }
+
+  &__title {
+    width: 310px;
+    margin: 0;
+    color: $white;
+    margin-bottom: 42px;
+  }
+
+  &__text {
+    width: 460px;
+    margin: 0;
+    margin-bottom: 42px;
+  }
+
+  &__button {
+    color: var(--color-dark);
+  }
+}

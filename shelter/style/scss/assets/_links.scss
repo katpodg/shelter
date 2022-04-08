@@ -8,7 +8,7 @@
     color: var(--color-lighten);
   }
 
-  &--active, &:active {
+  &--active {
     color: var(--color-lighten);
     border-bottom: 3px solid var(--color-primary);
   }
