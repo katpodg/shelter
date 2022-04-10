@@ -10,8 +10,18 @@
   font-weight: 400;
   font-size: 35px;
   line-height: 45.5px;
-  letter-spacing: 0.14rem;    
+  letter-spacing: 0.06em;    
   color: $title-dark;
+}
+
+.h4 {
+  font-weight: 400;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 20px;
+  line-height: 23px;
+  color: $title-dark;
+  letter-spacing: 0.06em;
+  margin: 0;
 }
 
 .text {
