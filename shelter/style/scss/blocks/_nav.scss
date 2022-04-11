@@ -1,0 +1,11 @@
+.nav {
+  &__list {
+    @include listStyleReset;
+    display: flex;
+    gap: 35px;
+  }
+  
+  &__link {
+    display: block;
+  }
+}
