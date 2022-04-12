@@ -12,6 +12,13 @@
   src: url("/fonts/Arial-Regular.woff2") format("woff2"), url("/fonts/Arial-Regular.woff") format("woff");
 }
 
+@font-face {
+  font-family: "Arial";
+  font-style: italic;
+  font-weight: 400;
+  src: url("/fonts/Arial-Italyc.woff2") format("woff2"), url("/fonts/Arial-Italyc.woff") format("woff");
+}
+
 .page *, .page *:before, .page *:after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -73,37 +80,6 @@
   border-bottom: 3px solid var(--color-primary);
 }
 
-.h2 {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-weight: 400;
-  font-size: 44px;
-  line-height: 57.2px;
-}
-
-.h3 {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-weight: 400;
-  font-size: 35px;
-  line-height: 45.5px;
-  letter-spacing: 0.06em;
-  color: #545454;
-}
-
-.h4 {
-  font-weight: 400;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 20px;
-  line-height: 23px;
-  color: #545454;
-  letter-spacing: 0.06em;
-  margin: 0;
-}
-
-.text {
-  font-size: 15px;
-  line-height: 24px;
-}
-
 .button {
   width: 207px;
   display: inline-block;
@@ -122,6 +98,56 @@
 
 .button:hover {
   background-color: var(--color-primary-light);
+}
+
+.h2 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 57.2px;
+}
+
+.h3 {
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 45.5px;
+  letter-spacing: 0.06em;
+  color: #545454;
+}
+
+.h4 {
+  font-weight: 400;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 20px;
+  line-height: 23px;
+  color: #545454;
+  letter-spacing: 0.06em;
+  margin: 0;
+}
+
+.h5 {
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 16.5px;
+  letter-spacing: 0.06em;
+  color: #545454;
+}
+
+.text {
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.text-s {
+  margin: 0;
+  font-style: italic;
+  font-size: 12px;
+  line-height: 18px;
+  color: #b2b2b2;
 }
 
 .slider {
@@ -239,14 +265,14 @@
 
 .not-only {
   background-color: var(--dark-bg);
-  background-image: url("../../../img/noise_transparent.png"), linear-gradient(310deg, #211f20 40%, #5b483a 100%);
+  background-image: url("../../img/noise_transparent.png"), linear-gradient(310deg, #211f20 40%, #5b483a 100%);
   color: var(--text-primary-light);
 }
 
 .not-only__wrapper {
   padding-top: 342px;
   padding-bottom: 244px;
-  background: url("../../../img/start-screen-puppy.png") no-repeat top 100% right 40px;
+  background: url("../../img/start-screen-puppy.png") no-repeat top 100% right 40px;
 }
 
 .not-only__title {
@@ -406,6 +432,7 @@
 
 .help {
   padding-top: 80px;
+  padding-bottom: 85px;
 }
 
 .help__wrapper {
@@ -484,4 +511,38 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.donation {
+  padding-top: 80px;
+  padding-bottom: 100px;
+  background-color: var(--light-bg);
+}
+
+.donation__wrapper {
+  padding: 0 182px;
+  background: url("/img/donation-dog.png") no-repeat 183px 50%;
+}
+
+.donation__content {
+  margin-left: auto;
+  text-align: left;
+  width: 380px;
+}
+
+.donation__title {
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+.donation__subtitle {
+  margin-bottom: 20px;
+}
+
+.donation__button {
+  margin-bottom: 20px;
+  width: auto;
+  border-radius: 9px;
+  padding: 10px 15px 10px 60px;
+  background: var(--color-primary) url("/icons/credit-card.svg") no-repeat 15px 50%;
 }
