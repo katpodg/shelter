@@ -1,15 +1,6 @@
 .link {
+  display: block;
   text-decoration: none;
-  color: var(--text-primary-light);
   font-size: 15px;
   line-height: 24px;
-
-  &:hover {
-    color: var(--color-lighten);
-  }
-
-  &--active {
-    color: var(--color-lighten);
-    border-bottom: 3px solid var(--color-primary);
-  }
 }

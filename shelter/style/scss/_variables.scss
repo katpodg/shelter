@@ -10,9 +10,27 @@
 
 // scss vars
 $white: #ffffff;
+
+$primary: #f1cdb3;
+$gray-light: #cdcdcd;
+$gray-lighten: #fafafa;
 $gradient-lighter: #5b483a;
 $gradient-darker: #211f20;
 $title-dark: #545454;
+$subtitle-dark: #292929;
 $text-dark: #4c4c4c;
 $text-lightgray: #b2b2b2;
 $inactive: #cdcdcd;
+
+$gray: #545454;
+$gray-dark: #292929;
+
+
+// blocks
+ 
+$logo-title: $primary;
+$logo-subtitle: $white;
+$link: $gray-light;
+$link-hover: $gray-lighten;
+$link-active: $gray-lighten;
+$border-link: $primary;
