@@ -1,0 +1,33 @@
+.donation {
+  padding-top: 80px;
+  padding-bottom: 100px;
+  background-color: var(--light-bg);
+
+  &__wrapper {
+    padding: 0 182px;
+    background: url('/img/donation-dog.png') no-repeat 183px 50%;
+  }
+
+  &__content {
+    margin-left: auto;
+    text-align: left;
+    width: 380px;
+  }
+
+  &__title {
+    width: 300px;
+    margin-bottom: 20px;
+  }
+
+  &__subtitle {
+    margin-bottom: 20px;
+  }
+
+  &__button {
+    margin-bottom: 20px;
+    width: auto;
+    border-radius: 9px;
+    padding: 10px 15px 10px 60px;
+    background: var(--color-primary) url('/icons/credit-card.svg') no-repeat 15px 50%;
+  }
+}
