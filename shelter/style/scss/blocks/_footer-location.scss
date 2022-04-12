@@ -1,0 +1,20 @@
+.footer-location {
+  max-width: 302px;
+
+  &__title {
+    margin-bottom: 32px;
+  }
+
+  &__item {
+    padding-left: 41px;
+    min-height: 40px;
+    margin-bottom: 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &--icon {
+      background: url('../../icons/icon-marker.svg') no-repeat 0 50%;
+    }
+  }
+}

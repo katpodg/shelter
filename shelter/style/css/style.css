@@ -521,7 +521,7 @@
 
 .donation__wrapper {
   padding: 0 182px;
-  background: url("/img/donation-dog.png") no-repeat 183px 50%;
+  background: url("../../img/donation-dog.png") no-repeat 183px 50%;
 }
 
 .donation__content {
@@ -544,5 +544,119 @@
   width: auto;
   border-radius: 9px;
   padding: 10px 15px 10px 60px;
-  background: var(--color-primary) url("/icons/credit-card.svg") no-repeat 15px 50%;
+  background: var(--color-primary) url("../../icons/credit-card.svg") no-repeat 15px 50%;
+}
+
+.footer {
+  background-color: var(--dark-bg);
+  background-image: url("../../img/noise_transparent.png"), linear-gradient(310deg, #211f20 40%, #5b483a 100%);
+}
+
+.footer__wrapper {
+  padding-top: 57px;
+  padding-bottom: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background: url("../../img/footer-puppy.png") no-repeat top 100% right 40px;
+}
+
+.footer__title {
+  color: #ffffff;
+}
+
+.footer__block {
+  margin-right: 160px;
+}
+
+.footer__block:last-child {
+  margin-right: 0;
+}
+
+.footer__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.footer__link {
+  text-decoration: none;
+  color: var(--color-primary);
+}
+
+.footer__link:hover {
+  text-decoration: underline;
+}
+
+.footer-contacts {
+  max-width: 279px;
+}
+
+.footer-contacts__title {
+  margin-bottom: 34px;
+}
+
+.footer-contacts__item {
+  padding-left: 60px;
+  min-height: 40px;
+  margin-bottom: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer-contacts__item--email {
+  background: url("../../icons/icon-email.svg") no-repeat 0 50%;
+}
+
+.footer-contacts__item--phone {
+  background: url("../../icons/icon-phone.svg") no-repeat 0 50%;
+}
+
+.footer-location {
+  max-width: 302px;
+}
+
+.footer-location__title {
+  margin-bottom: 32px;
+}
+
+.footer-location__item {
+  padding-left: 41px;
+  min-height: 40px;
+  margin-bottom: 28px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer-location__item--icon {
+  background: url("../../icons/icon-marker.svg") no-repeat 0 50%;
 }

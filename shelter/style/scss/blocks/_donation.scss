@@ -5,7 +5,7 @@
 
   &__wrapper {
     padding: 0 182px;
-    background: url('/img/donation-dog.png') no-repeat 183px 50%;
+    background: url('../../img/donation-dog.png') no-repeat 183px 50%;
   }
 
   &__content {
@@ -28,6 +28,6 @@
     width: auto;
     border-radius: 9px;
     padding: 10px 15px 10px 60px;
-    background: var(--color-primary) url('/icons/credit-card.svg') no-repeat 15px 50%;
+    background: var(--color-primary) url('../../icons/credit-card.svg') no-repeat 15px 50%;
   }
 }
