@@ -1,0 +1,41 @@
+.footer {
+  background-color: var(--dark-bg);
+  background-image: url('../../img/noise_transparent.png'),
+                    linear-gradient(310deg, $gradient-darker 40%, $gradient-lighter 100%);
+
+  &__wrapper {
+    padding-top: 57px;
+    padding-bottom: 24px;
+    display: flex;
+    justify-content: flex-start;
+    background: url('../../img/footer-puppy.png') no-repeat top 100% right 40px;
+  }
+
+  &__title {
+    color: $white;
+  }
+
+  &__block {
+    margin-right: 160px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__list {
+    @include listStyleReset;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: var(--color-primary);
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
