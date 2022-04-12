@@ -4,8 +4,36 @@
     display: flex;
     gap: 35px;
   }
-  
+
   &__link {
-    display: block;
+    color: $link;
+
+    &:hover {
+      color: $link-hover;
+    }
+
+    &--active {
+      color: $link-active;
+      border-bottom: 3px solid $border-link;
+    }
+  }
+}
+
+.nav--pets {
+  $link: $gray;
+  $link-hover: $gray-dark;
+  $link-active: $gray-dark;
+
+  .nav__link {
+    color: $link;
+
+    &:hover {
+      color: $link-hover;
+    }
+
+    &--active {
+      color: $link-active;
+      border-bottom: 3px solid $border-link;
+    }
   }
 }

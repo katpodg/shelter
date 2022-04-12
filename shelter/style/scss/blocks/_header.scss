@@ -1,9 +1,9 @@
 .header {
+  position: relative;
   display: flex;
-  justify-content: center;
-  color: var(--text-primary-light);
 
   &__wrapper {
+    width: 100%;
     position: absolute;
     left: 0;
     right: 0;
@@ -13,8 +13,31 @@
     align-items: center;
   }
 
-  &__logo {
-    display: block;
-    text-decoration: none;
+  &__logo-title {    
+    color: $primary;
+  }
+
+  &__logo-subtitle {    
+    color: $white;
+  }
+}
+
+.header--pets {
+  $logo-title: $title-dark;
+  $logo-subtitle: $subtitle-dark;
+
+  position: sticky;
+  min-height: 120px;
+
+  .header__wrapper {
+    position: static;
+
+    .header__logo-title {
+      color: $logo-title;
+    }
+
+    .header__logo-subtitle {
+      color: $logo-subtitle;
+    }
   }
 }
