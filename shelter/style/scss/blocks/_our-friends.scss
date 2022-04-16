@@ -39,3 +39,15 @@
     color: var(--color-dark);
   }
 }
+
+@media (max-width: 1100px) {
+  .our-friends {
+
+    &__list {
+      gap: 40px;
+    }
+    &__item--hide {
+      display: none;
+    }
+  }
+}

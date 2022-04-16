@@ -34,12 +34,14 @@
 @media (max-width: 1100px) {
   .not-only {
     &__wrapper {
-      padding: 150px 154px 693px 154px;
+      padding: 150px 100px 693px 100px;
       background: url('../../img/start-screen-puppy-tablet.png') no-repeat top 100% right 30px;
+      align-items: center;
     }
 
-    &__button {
-      align-self: center;
+    &__title-container {
+      padding-right: 154px
+      ;
     }
   }
 }

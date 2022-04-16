@@ -28,6 +28,7 @@
 
 @media (max-width: 1100px) {
   .wrapper {
+    max-width: 768px;
     padding: 0 30px;
   }
 }
@@ -183,6 +184,14 @@
   right: -105px;
 }
 
+@media (max-width: 1100px) {
+  .slider__arrow--back {
+    left: -64px;
+  }
+  .slider__arrow--next {
+    right: -64px;
+  }
+}
 .page {
   position: relative;
   display: flex;
@@ -228,8 +237,9 @@
   color: #292929;
 }
 
-@media (min-width: 768px) and (max-width: 1100px) {
+@media (max-width: 1100px) {
   .header__wrapper {
+    max-width: 768px;
     top: 30px;
   }
 }
@@ -293,11 +303,12 @@
 
 @media (max-width: 1100px) {
   .not-only__wrapper {
-    padding: 150px 154px 693px 154px;
+    padding: 150px 100px 693px 100px;
     background: url("../../img/start-screen-puppy-tablet.png") no-repeat top 100% right 30px;
+    align-items: center;
   }
-  .not-only__button {
-    align-self: center;
+  .not-only__title-container {
+    padding-right: 154px;
   }
 }
 .about__wrapper {
@@ -322,6 +333,19 @@
   order: -1;
 }
 
+@media (max-width: 1100px) {
+  .about__wrapper {
+    flex-direction: column;
+    padding: 63px 169px 100px 169px;
+    gap: 80px;
+  }
+  .about__img-container {
+    order: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .our-friends {
   padding-top: 80px;
   padding-bottom: 100px;
@@ -359,6 +383,14 @@
   color: var(--color-dark);
 }
 
+@media (max-width: 1100px) {
+  .our-friends__list {
+    gap: 40px;
+  }
+  .our-friends__item--hide {
+    display: none;
+  }
+}
 .pet {
   padding-bottom: 30px;
   border-radius: 9px;
@@ -367,6 +399,7 @@
 .pet:hover {
   cursor: pointer;
   background-color: #ffffff;
+  box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
 }
 .pet:hover .pet__link {
   border: 2px solid var(--color-primary-light);
