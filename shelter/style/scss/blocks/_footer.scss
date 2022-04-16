@@ -1,8 +1,7 @@
 .footer {
-  background-color: var(--dark-bg);
   background-image: url('../../img/noise_transparent.png'),
                     linear-gradient(310deg, $gradient-darker 40%, $gradient-lighter 100%);
-
+                    
   &__wrapper {
     padding-top: 57px;
     padding-bottom: 24px;

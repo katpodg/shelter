@@ -26,8 +26,12 @@
   padding: 0 40px;
 }
 
+@media (max-width: 1100px) {
+  .wrapper {
+    padding: 0 30px;
+  }
+}
 :root {
-  --dark-bg: #262425;
   --light-bg: #f6f6f6;
   --color-dark: #292929;
   --text-primary-light: #cdcdcd;
@@ -224,12 +228,17 @@
   color: #292929;
 }
 
+@media (min-width: 768px) and (max-width: 1100px) {
+  .header__wrapper {
+    top: 30px;
+  }
+}
 .nav__list {
   margin: 0;
   padding: 0;
   list-style: none;
   display: flex;
-  gap: 35px;
+  gap: 36px;
 }
 .nav__link {
   color: #cdcdcd;
@@ -255,11 +264,14 @@
 }
 
 .not-only {
-  background-color: var(--dark-bg);
+  background-color: #262425;
   background-image: url("../../img/noise_transparent.png"), linear-gradient(310deg, #211f20 40%, #5b483a 100%);
   color: var(--text-primary-light);
 }
 .not-only__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   padding-top: 342px;
   padding-bottom: 244px;
   background: url("../../img/start-screen-puppy.png") no-repeat top 100% right 40px;
@@ -279,6 +291,15 @@
   color: var(--color-dark);
 }
 
+@media (max-width: 1100px) {
+  .not-only__wrapper {
+    padding: 150px 154px 693px 154px;
+    background: url("../../img/start-screen-puppy-tablet.png") no-repeat top 100% right 30px;
+  }
+  .not-only__button {
+    align-self: center;
+  }
+}
 .about__wrapper {
   padding: 77px 215px 98px 215px;
   display: flex;
@@ -458,7 +479,6 @@
 }
 
 .footer {
-  background-color: var(--dark-bg);
   background-image: url("../../img/noise_transparent.png"), linear-gradient(310deg, #211f20 40%, #5b483a 100%);
 }
 .footer__wrapper {

@@ -1,10 +1,13 @@
 .not-only {
-  background-color: var(--dark-bg);
+  background-color: $bg-dark;
   background-image: url('../../img/noise_transparent.png'),
-                    linear-gradient(310deg, $gradient-darker 40%, $gradient-lighter 100%);
+    linear-gradient(310deg, $gradient-darker 40%, $gradient-lighter 100%);
   color: var(--text-primary-light);
 
   &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     padding-top: 342px;
     padding-bottom: 244px;
     background: url('../../img/start-screen-puppy.png') no-repeat top 100% right 40px;
@@ -25,5 +28,18 @@
 
   &__button {
     color: var(--color-dark);
+  }
+}
+
+@media (max-width: 1100px) {
+  .not-only {
+    &__wrapper {
+      padding: 150px 154px 693px 154px;
+      background: url('../../img/start-screen-puppy-tablet.png') no-repeat top 100% right 30px;
+    }
+
+    &__button {
+      align-self: center;
+    }
   }
 }

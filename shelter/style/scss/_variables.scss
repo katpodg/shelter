@@ -1,5 +1,4 @@
 :root {
-  --dark-bg: #262425;
   --light-bg: #f6f6f6;
   --color-dark: #292929;
   --text-primary-light: #cdcdcd;
@@ -21,6 +20,7 @@ $subtitle-dark: #292929;
 $text-dark: #4c4c4c;
 $text-lightgray: #b2b2b2;
 $inactive: #cdcdcd;
+$brown-dark: #262425;
 
 $gray: #545454;
 $gray-dark: #292929;
@@ -36,4 +36,5 @@ $link-hover: $gray-lighten;
 $link-active: $gray-lighten;
 $border-link: $primary;
 $bg-color: $light;
+$bg-dark: $brown-dark;
 $button-text: $gray-dark;
