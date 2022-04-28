@@ -14,14 +14,14 @@
   }
 
   &__title {
-    width: 310px;
+    max-width: 310px;
     margin: 0;
     color: $white;
     margin-bottom: 42px;
   }
 
   &__text {
-    width: 460px;
+    max-width: 460px;
     margin: 0;
     margin-bottom: 42px;
   }
@@ -34,14 +34,21 @@
 @media (max-width: 1100px) {
   .not-only {
     &__wrapper {
-      padding: 150px 100px 693px 100px;
-      background: url('../../img/start-screen-puppy-tablet.png') no-repeat top 100% right 30px;
-      align-items: center;
+      padding-left: 20%;
+      padding-right: 20%;
+
+      padding-top: 150px;
+      padding-bottom: 693px;
+      background: url('../../img/start-screen-puppy-tablet.png') no-repeat top 100% right 15%;
+      align-items: flex-start;
     }
 
     &__title-container {
-      padding-right: 154px
-      ;
+      margin-right: auto;
+    }
+
+    &__button {
+      align-self: center;
     }
   }
 }

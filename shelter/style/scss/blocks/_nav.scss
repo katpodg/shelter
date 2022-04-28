@@ -1,12 +1,17 @@
 .nav {
+  flex-grow: 0.16;
+  flex-shrink: 1;
+
   &__list {
     @include listStyleReset;
     display: flex;
-    gap: 36px;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   &__link {
     color: $link;
+    width: max-content;
 
     &:hover {
       color: $link-hover;
@@ -40,5 +45,7 @@
 }
 
 @media (max-width: 1100px) {
-  
+  .nav {
+  flex-grow: 0.58;
+  }
 }
