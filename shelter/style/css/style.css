@@ -482,17 +482,22 @@
 
 .help {
   padding-top: 80px;
-  padding-bottom: 26px;
+  padding-bottom: 44px;
 }
 .help__wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+.help__subtitle {
+  width: 100%;
+  text-align: center;
+  word-wrap: break-word;
+}
 .help__title {
   text-align: center;
   margin: 0;
-  width: 310px;
+  max-width: 310px;
   margin-bottom: 58px;
 }
 .help__list {
@@ -518,22 +523,19 @@
   text-decoration: none;
   align-items: center;
 }
-@media (min-width: 1101px) {
-  .help .help__list {
-    min-width: 1029px;
-  }
-  .help .help__item:nth-of-type(5n) {
+
+@media (min-width: 1280px) {
+  .help__item:nth-of-type(5n) {
     margin-right: 0;
   }
 }
-
-@media (max-width: 1100px) {
-  .help__list {
-    padding: 0 9px;
-  }
+@media (max-width: 1280px) {
   .help__item {
     margin-right: 0;
     width: 33.3333333333%;
+  }
+  .help__wrapper {
+    padding: 0 5.1%;
   }
 }
 .donation {
