@@ -1,18 +1,26 @@
 .slider {
   position: relative;
-  &__arrow {
-    position: relative;
-    cursor: pointer;
+  width: 100%;
+}
+
+.slider-buttons {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+
+  &__button {
+    position: absolute;
+    display: inline-block;
+    width: 52px;
+    height: 52px;
     margin: 0;
     padding: 0;
     background: none;
-    display: inline-block;
-    position: absolute;
-    width: 52px;
-    height: 52px;
     border: 2px solid var(--color-primary);
     border-radius: 50%;
     top: calc(50% - 26px);
+    cursor: pointer;
+    @extend %transition;
 
     &:hover {
       background-color: var(--color-primary-light);
@@ -29,15 +37,14 @@
     }
 
     &--back {
-      left: -105px;
+      left: 0;
     }
 
     &--next {
-      right: -105px;
+      right: 0;
     }
 
-    .slider__arrow-icon {
-      position: absolute;
+    .slider-buttons__icon {
       width: 14px;
       height: 6px;
       top: calc(50% - 3px);
@@ -51,7 +58,7 @@
   }
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1280px) {
   .slider {
     &__arrow {
       &--back {

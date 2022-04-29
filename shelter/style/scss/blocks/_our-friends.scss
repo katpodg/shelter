@@ -7,13 +7,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0;
   }
 
   &__title {
     margin: 0;
     margin-bottom: 60px;
-    width: 400px;
+    max-width: 400px;
     text-align: center;
     letter-spacing: 0.06em;
   }
@@ -21,7 +20,9 @@
   &__list {
     @include listStyleReset;
     display: flex;
+    justify-content: center;
     gap: 90px;
+    flex-wrap: wrap;
   }
 
 
@@ -41,9 +42,8 @@
   }
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1280px) {
   .our-friends {
-
     &__list {
       gap: 40px;
     }

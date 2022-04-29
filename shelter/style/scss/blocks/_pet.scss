@@ -1,7 +1,8 @@
 .pet {
   padding-bottom: 30px;
   border-radius: 9px;
-  background-color: var(--color-lighten);
+  background-color: var(--color-lighten);  
+  @extend %transition;
 
   &:hover {
     cursor: pointer;
