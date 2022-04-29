@@ -11,6 +11,7 @@
 $white: #ffffff;
 
 $primary: #f1cdb3;
+$primary-light: #fddcc4;
 $gray-light: #cdcdcd;
 $gray-lighten: #fafafa;
 $gradient-lighter: #5b483a;
@@ -39,3 +40,5 @@ $border-link: $primary;
 $bg-color: $light;
 $bg-dark: $brown-dark;
 $button-text: $gray-dark;
+$button-color: $primary;
+$button-hovered: $primary-light;

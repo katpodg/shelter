@@ -146,7 +146,11 @@ sup {
  */
 
 img {
-  border-style: none;
+  border-style: none;  
+  min-width: 100%;
+  height: auto;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 /* Forms

@@ -16,15 +16,15 @@
     margin: 0;
     padding: 0;
     background: none;
-    border: 2px solid var(--color-primary);
+    border: 2px solid $button-color;
     border-radius: 50%;
     top: calc(50% - 26px);
     cursor: pointer;
     @extend %transition;
 
     &:hover {
-      background-color: var(--color-primary-light);
-      border: 2px solid var(--color-primary-light);
+      background-color: $button-hovered;
+      border: 2px solid $button-hovered;
     }
 
     &:disabled {

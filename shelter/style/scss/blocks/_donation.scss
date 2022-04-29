@@ -1,23 +1,22 @@
 .donation {
-  padding-top: 80px;
+  padding-top: 81px;
   padding-bottom: 100px;
   background-color: var(--light-bg);
 
   &__wrapper {
     position: relative;
-    padding: 0 14.2%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  &__img-wrapper {
+    padding-top: 11px;
   }
 
   &__content {
-    padding-left: 58.5%;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    background: url('../../img/donation-dog.png') no-repeat left 0 top 50%;
-    background-size: 55% auto;
   }
 
   &__title {
@@ -26,14 +25,14 @@
   }
 
   &__subtitle {
-    margin-bottom: 20px;
+    margin-bottom: 19px;
   }
 
   &__button {
     margin-bottom: 20px;
-    width: auto;
+    width: fit-content;
     border-radius: 9px;
-    padding: 10px 15px 10px 60px;
+    padding: 9px 15px 10px 60px;
     background: var(--color-primary) url('../../icons/credit-card.svg') no-repeat 15px 50%;
   }
 
@@ -44,7 +43,11 @@
 
 @media (max-width: 1280px) {
   .donation {
-    &__content {      
+    &__wrapper {
+      flex-direction: column;
+    }
+
+    &__content {
       padding: 0 15.3%;
       padding-bottom: 58%;
       background-position: bottom 0 left 50%;

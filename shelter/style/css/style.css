@@ -36,7 +36,7 @@
     padding: 0 4%;
   }
 }
-.pet, .nav__link, .slider-buttons__button, .button {
+.contacts__link, .pet, .nav__link, .slider-buttons__button, .button {
   transition: all 0.3s ease-out;
 }
 
@@ -88,7 +88,7 @@
   vertical-align: middle;
   padding: 15px 5px;
   text-decoration: none;
-  background-color: var(--color-primary);
+  background-color: #f1cdb3;
   border-radius: 100px;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 17px;
@@ -97,7 +97,7 @@
   cursor: pointer;
 }
 .button:hover {
-  background-color: var(--color-primary-light);
+  background-color: #fddcc4;
 }
 
 .h2 {
@@ -168,14 +168,14 @@
   margin: 0;
   padding: 0;
   background: none;
-  border: 2px solid var(--color-primary);
+  border: 2px solid #f1cdb3;
   border-radius: 50%;
   top: calc(50% - 26px);
   cursor: pointer;
 }
 .slider-buttons__button:hover {
-  background-color: var(--color-primary-light);
-  border: 2px solid var(--color-primary-light);
+  background-color: #fddcc4;
+  border: 2px solid #fddcc4;
 }
 .slider-buttons__button:disabled {
   pointer-events: none;
@@ -309,7 +309,7 @@
 .not-only__wrapper {
   display: flex;
   flex-direction: column;
-  padding-top: 342px;
+  padding-top: 341px;
   padding-bottom: 244px;
   background: url("../../img/start-screen-puppy.png") no-repeat top 100% right 40px;
 }
@@ -382,8 +382,11 @@
     gap: 80px;
     padding-left: 22%;
     padding-right: 22%;
+    align-items: center;
   }
   .about__img-container {
+    width: 300px;
+    height: 408px;
     order: 0;
     display: flex;
     flex-direction: column;
@@ -539,37 +542,35 @@
   }
 }
 .donation {
-  padding-top: 80px;
+  padding-top: 81px;
   padding-bottom: 100px;
   background-color: var(--light-bg);
 }
 .donation__wrapper {
   position: relative;
-  padding: 0 14.2%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.donation__img-wrapper {
+  padding-top: 11px;
 }
 .donation__content {
-  padding-left: 58.5%;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  background: url("../../img/donation-dog.png") no-repeat left 0 top 50%;
-  background-size: 55% auto;
 }
 .donation__title {
   max-width: 300px;
   margin-bottom: 20px;
 }
 .donation__subtitle {
-  margin-bottom: 20px;
+  margin-bottom: 19px;
 }
 .donation__button {
   margin-bottom: 20px;
-  width: auto;
+  width: fit-content;
   border-radius: 9px;
-  padding: 10px 15px 10px 60px;
+  padding: 9px 15px 10px 60px;
   background: var(--color-primary) url("../../icons/credit-card.svg") no-repeat 15px 50%;
 }
 .donation__text {
@@ -577,6 +578,9 @@
 }
 
 @media (max-width: 1280px) {
+  .donation__wrapper {
+    flex-direction: column;
+  }
   .donation__content {
     padding: 0 15.3%;
     padding-bottom: 58%;
@@ -585,25 +589,76 @@
   }
 }
 .footer {
+  padding-top: 40px;
   background-image: url("../../img/noise_transparent.png"), linear-gradient(310deg, #211f20 40%, #5b483a 100%);
 }
 .footer__wrapper {
-  padding-top: 57px;
-  padding-bottom: 24px;
   display: flex;
   justify-content: flex-start;
-  background: url("../../img/footer-puppy.png") no-repeat top 100% right 40px;
+  flex-wrap: wrap;
 }
-.footer__title {
-  color: #ffffff;
+.footer__image-container {
+  width: 300px;
+  height: 310px;
 }
-.footer__block {
-  margin-right: 160px;
+
+.contacts {
+  padding-top: 16px;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  flex-grow: 2;
 }
-.footer__block:last-child {
+.contacts__block {
+  margin-right: 15.4%;
+}
+.contacts__block:last-of-type {
   margin-right: 0;
 }
-.footer__list {
+.contacts__block--questions {
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contacts__block--questions .contacts__title {
+  margin-bottom: 38px;
+}
+.contacts__block--questions .contacts__item {
+  padding: 5px 0;
+  padding-left: 60px;
+  margin-bottom: 40px;
+}
+.contacts__block--questions .contacts__item:last-of-type {
+  margin-bottom: 0;
+}
+.contacts__block--questions .contacts__item--email {
+  background: url("../../icons/icon-email.svg") no-repeat 0 50%;
+}
+.contacts__block--questions .contacts__item--phone {
+  background: url("../../icons/icon-phone.svg") no-repeat 0 50%;
+}
+.contacts__block--location {
+  max-width: 320px;
+}
+.contacts__block--location .contacts__title {
+  margin-bottom: 27px;
+}
+.contacts__block--location .contacts__item {
+  padding: 5px 0;
+  padding-left: 42px;
+  margin-bottom: 29px;
+}
+.contacts__block--location .contacts__item:last-of-type {
+  margin-bottom: 0;
+}
+.contacts__block--location .contacts__item--icon {
+  background: url("../../icons/icon-marker.svg") no-repeat 0 50%;
+}
+.contacts__title {
+  color: #ffffff;
+}
+.contacts__list {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -611,51 +666,14 @@
   flex-direction: column;
   align-items: flex-start;
 }
-.footer__link {
+.contacts__link {
   text-decoration: none;
   color: var(--color-primary);
+  display: inline-block;
+  vertical-align: middle;
 }
-.footer__link:hover {
-  text-decoration: underline;
-}
-
-.footer-contacts {
-  max-width: 279px;
-}
-.footer-contacts__title {
-  margin-bottom: 34px;
-}
-.footer-contacts__item {
-  padding-left: 60px;
-  min-height: 40px;
-  margin-bottom: 32px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.footer-contacts__item--email {
-  background: url("../../icons/icon-email.svg") no-repeat 0 50%;
-}
-.footer-contacts__item--phone {
-  background: url("../../icons/icon-phone.svg") no-repeat 0 50%;
-}
-
-.footer-location {
-  max-width: 302px;
-}
-.footer-location__title {
-  margin-bottom: 32px;
-}
-.footer-location__item {
-  padding-left: 41px;
-  min-height: 40px;
-  margin-bottom: 28px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.footer-location__item--icon {
-  background: url("../../icons/icon-marker.svg") no-repeat 0 50%;
+.contacts__link:hover {
+  color: #f6f6f6;
 }
 
 .our-pets {
