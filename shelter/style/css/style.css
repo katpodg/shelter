@@ -544,16 +544,22 @@
   background-color: var(--light-bg);
 }
 .donation__wrapper {
-  padding: 0 182px;
-  background: url("../../img/donation-dog.png") no-repeat 183px 50%;
+  position: relative;
+  padding: 0 14.2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .donation__content {
-  margin-left: auto;
-  text-align: left;
-  width: 380px;
+  padding-left: 58.5%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: url("../../img/donation-dog.png") no-repeat left 0 top 50%;
+  background-size: 55% auto;
 }
 .donation__title {
-  width: 300px;
+  max-width: 300px;
   margin-bottom: 20px;
 }
 .donation__subtitle {
@@ -566,7 +572,18 @@
   padding: 10px 15px 10px 60px;
   background: var(--color-primary) url("../../icons/credit-card.svg") no-repeat 15px 50%;
 }
+.donation__text {
+  max-width: 380px;
+}
 
+@media (max-width: 1280px) {
+  .donation__content {
+    padding: 0 15.3%;
+    padding-bottom: 58%;
+    background-position: bottom 0 left 50%;
+    background-size: 92% auto;
+  }
+}
 .footer {
   background-image: url("../../img/noise_transparent.png"), linear-gradient(310deg, #211f20 40%, #5b483a 100%);
 }
