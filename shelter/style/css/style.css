@@ -302,16 +302,21 @@
   }
 }
 .not-only {
+  padding-top: 180px;
   background-color: #262425;
   background-image: url("../../img/noise_transparent.png"), linear-gradient(310deg, #211f20 40%, #5b483a 100%);
   color: var(--text-primary-light);
 }
 .not-only__wrapper {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.not-only__content {
+  max-width: 461px;
+  padding-bottom: 80px;
+  display: flex;
   flex-direction: column;
-  padding-top: 341px;
-  padding-bottom: 244px;
-  background: url("../../img/start-screen-puppy.png") no-repeat top 100% right 40px;
 }
 .not-only__title {
   max-width: 310px;
@@ -320,29 +325,34 @@
   margin-bottom: 42px;
 }
 .not-only__text {
-  max-width: 460px;
+  width: 100%;
   margin: 0;
-  margin-bottom: 42px;
+  margin-bottom: 41px;
 }
 .not-only__button {
   color: var(--color-dark);
 }
 
 @media (max-width: 1280px) {
-  .not-only__wrapper {
-    padding-top: 150px;
-    padding-bottom: 693px;
-    background: url("../../img/start-screen-puppy-tablet.png") no-repeat top 100% right 15%;
-    padding-left: 20%;
-    padding-right: 20%;
-    align-items: center;
+  .not-only {
+    padding-top: 151px;
   }
-  .not-only__title {
-    margin-right: auto;
+  .not-only__wrapper {
+    flex-direction: column;
+  }
+  .not-only__content {
+    align-items: flex-start;
+    padding-bottom: 0;
+    margin-bottom: 100px;
+  }
+  .not-only__img-container {
+    align-self: flex-end;
   }
   .not-only__text {
+    width: 100%;
+  }
+  .not-only__button {
     align-self: center;
-    max-width: 100%;
   }
 }
 .about {
@@ -350,16 +360,17 @@
   padding-bottom: 100px;
 }
 .about__wrapper {
-  padding-left: 215px;
-  padding-right: 215px;
   display: flex;
   justify-content: center;
-  gap: 120px;
 }
 .about__title {
   padding-top: 18px;
   margin: 0;
   margin-bottom: 23px;
+}
+.about__text-container {
+  width: 50%;
+  max-width: 430px;
 }
 .about__text {
   margin: 0;
@@ -369,6 +380,7 @@
   margin-bottom: 25px;
 }
 .about__img-container {
+  margin-right: 10%;
   order: -1;
 }
 
@@ -379,12 +391,14 @@
   }
   .about__wrapper {
     flex-direction: column;
-    gap: 80px;
-    padding-left: 22%;
-    padding-right: 22%;
     align-items: center;
   }
+  .about__text-container {
+    width: 100%;
+    margin-bottom: 11.2%;
+  }
   .about__img-container {
+    margin-right: 0;
     width: 300px;
     height: 408px;
     order: 0;
