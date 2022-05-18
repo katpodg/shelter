@@ -1,9 +1,10 @@
-.page *, .page *:before, .page *:after {
+.page {
+  font-size: 10px;
   box-sizing: border-box;
 }
 
-.page {
-  font-size: 10px;
+*, *::after, *::before {
+  box-sizing: inherit;
 }
 
 .wrapper {

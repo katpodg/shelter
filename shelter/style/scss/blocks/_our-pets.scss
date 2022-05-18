@@ -11,16 +11,42 @@
 
   &__title {
     width: 400px;
-    margin-bottom: 60px;
+    margin-bottom: 45px;
     text-align: center;
   }
 
-  &__container {
+  &__content {
+    padding: 15px 0;
     @include listStyleReset;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, auto);
     column-gap: 40px;
     row-gap: 30px;
-    margin-bottom: 60px;
+    margin-bottom: 45px;
+  }
+}
+
+@media (max-width: 1279px) {
+  .our-pets {
+    &__wrapper {
+      padding-bottom: 76px;
+    }
+
+    &__content {
+      padding: 0;
+      grid-template-columns: repeat(2, auto);
+      grid-template-rows: repeat(3, auto);
+      margin-bottom: 40px;
+    }
+
+    &__title {
+      margin-bottom: 29px;
+    }
+
+    &__item:nth-last-child(-n+2) {
+      display: none;
+    }
+
+
   }
 }

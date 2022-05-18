@@ -32,7 +32,7 @@
     align-items: center;
   }
 
-  &__container {
+  &__content {
     margin-bottom: 60px;
   }
 
@@ -47,7 +47,7 @@
     &__list {
       gap: 40px;
     }
-    &__item--hide {
+    &__item:last-child {
       display: none;
     }
   }
