@@ -52,3 +52,26 @@
     }
   }
 }
+
+@media (max-width: 767px) {
+  .our-friends {
+    padding-top: 42px;
+    padding-bottom: 42px;
+
+    &__title {
+      margin-bottom: 41px;
+    }
+
+    &__list {
+      margin-bottom: 20px;
+    }
+
+    &__item:nth-last-child(-n+2) {
+      display: none;
+    }
+
+    &__content {
+      margin-bottom: 42px;
+    }
+  }
+}

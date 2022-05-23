@@ -41,4 +41,8 @@
   .title--h2 {
     @include fontTitle(2.5rem);
   }
+
+  .title--h3 {
+    @include fontTitle(2.5rem)
+  }
 }

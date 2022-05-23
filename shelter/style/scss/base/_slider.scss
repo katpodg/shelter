@@ -1,6 +1,9 @@
 .slider {
   position: relative;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .slider-buttons {
@@ -68,6 +71,25 @@
       &--next {
         right: -64px;
       }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .slider, .slider-buttons, .slider-buttons__button  {
+    position: static;
+  }
+
+  .slider-buttons {
+    max-width: 320px;
+    padding: 0 18px;
+    display: flex;
+    justify-content: center;
+
+    &__btn-wrapper {
+      flex-grow: 0.5;
+      display: flex;
+      justify-content: center;
     }
   }
 }

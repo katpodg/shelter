@@ -48,7 +48,7 @@
         </div>
         <div class="not-only__img-container">
           <picture>
-            <source media="(max-width: 767px)" srcset="img/start-screen-puppy-mobile.png" >
+            <source media="(max-width: 767px)" srcset="img/start-screen-puppy-mobile.png">
             <source media="(max-width: 1279px)" srcset="img/start-screen-puppy-tablet.png">
             <source media="(min-width: 1280px)" srcset="img/start-screen-puppy.png">
             <img src="img/start-screen-puppy.png">
@@ -69,7 +69,11 @@
             they become attached to the pets and would hardly ever leave them alone.</p>
         </div>
         <div class="about__img-container">
-          <img src="img/about-pets.png" alt="Кошка с собакой" width="300" height="408">
+          <picture>
+            <source media="(max-width: 767px)" srcset="img/about-pets-mobile.png">
+            <source media="(min-width: 768px)" srcset="img/about-pets.png">
+            <img src="img/about-pets.png">
+          </picture>
         </div>
       </div>
     </section>
@@ -105,16 +109,18 @@
             </li>
           </ul>
           <div class="slider-buttons">
-            <button class="slider-buttons__button slider-buttons__button--back">
-              <svg viewBox="0 0 14 6" class="slider-buttons__icon slider-buttons__icon--back">
-                <use xlink:href="icons/sprite.svg#slider-arrow"></use>
-              </svg>
-            </button>
-            <button class="slider-buttons__button slider-buttons__button--next">
-              <svg viewBox="0 0 14 6" class="slider-buttons__icon slider-buttons__icon--next">
-                <use xlink:href="icons/sprite.svg#slider-arrow"></use>
-              </svg>
-            </button>
+            <div class="slider-buttons__btn-wrapper"><button class="slider-buttons__button slider-buttons__button--back">
+                <svg viewBox="0 0 14 6" class="slider-buttons__icon slider-buttons__icon--back">
+                  <use xlink:href="icons/sprite.svg#slider-arrow"></use>
+                </svg>
+              </button></div>
+            <div class="slider-buttons__btn-wrapper"><button class="slider-buttons__button slider-buttons__button--next">
+                <svg viewBox="0 0 14 6" class="slider-buttons__icon slider-buttons__icon--next">
+                  <use xlink:href="icons/sprite.svg#slider-arrow"></use>
+                </svg>
+              </button></div>
+
+
           </div>
         </div>
         <a class="button our-friends__rest-button" href="pets.html">Get to know the rest</a>
@@ -144,13 +150,13 @@
           </div>
           <div class="help__item">
             <a href="#" class="help__link">
-              <p class="h4 help__subtitle">Bowls and cups</p>
+              <p class="title--h4 help__subtitle">Bowls and cups</p>
               <img class="help__icon" src="icons/help/bowls-and-cups.svg" alt="bowls-and-cups" width="60" height="60">
             </a>
           </div>
           <div class="help__item">
             <a href="#" class="help__link">
-              <p class="h4 help__subtitle">Shampoos</p>
+              <p class="title--h4 help__subtitle">Shampoos</p>
               <img class="help__icon" src="icons/help/shampoos.svg" alt="Shampoos" width="60" height="60">
             </a>
           </div>
@@ -162,7 +168,7 @@
           </div>
           <div class="help__item">
             <a href="#" class="help__link">
-              <p class="h4 help__subtitle">Medicines</p>
+              <p class="title--h4 help__subtitle">Medicines</p>
               <img class="help__icon" src="icons/help/medicines.svg" alt="Medicines" width="60" height="60">
             </a>
           </div>
@@ -223,7 +229,8 @@
                 Boston (entrance from the store)</a>
             </li>
             <li class="contacts__item contacts__item--location">
-              <a class="title--h4 contacts__link" href="https://goo.gl/maps/AGy4cUvEx87K6Un4A" target="_blank">18 South Park,
+              <a class="title--h4 contacts__link" href="https://goo.gl/maps/AGy4cUvEx87K6Un4A" target="_blank">18 South
+                Park,
                 London</a>
             </li>
           </ul>

@@ -52,12 +52,33 @@
 
     &__img-container {
       margin-right: 0;
-      width: 300px;
-      height: 408px;
       order: 0;
       display: flex;
       flex-direction: column;
       align-items: center;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .about {
+    padding-top: 42px;
+    padding-bottom: 42px;
+
+    &__title {
+      text-align: center;
+    }
+
+    &__text-container {
+      padding: 0 15px;
+      text-align: justify;
+      margin-bottom: 41px;
+    }
+
+    &__text {
+      &:first-of-type {
+        margin-bottom: 22px;
+      }
     }
   }
 }
