@@ -5,12 +5,13 @@
 @import 'variables';
 
 
-//assets
-@import 'assets/logo';
-@import 'assets/links';
-@import 'assets/buttons';
-@import 'assets/typography';
-@import 'assets/slider';
+//base
+@import 'base/logo';
+@import 'base/links';
+@import 'base/buttons';
+@import 'base/title';
+@import 'base/slider';
+@import 'base/burger';
 
 //blocks
 @import 'blocks/page';
