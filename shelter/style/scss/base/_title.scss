@@ -1,0 +1,44 @@
+.title--h2 {
+  @include fontTitle(4.4rem, $spacing: normal);
+}
+
+.title--h3 {
+  margin: 0;
+  color: $title-dark;
+
+  @include fontTitle(3.5rem, 4.55rem);
+}
+
+.title--h4 {
+  margin: 0;
+  color: $title-dark;
+
+  @include fontTitle(2.0rem, 2.3rem);
+}
+
+.title--h5 {
+  margin: 0;
+  color: $title-dark;
+
+  @include fontTitle(1.5rem, 1.7rem);
+}
+
+.text {
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.text-s {
+  margin: 0;
+  font-style: italic;
+  font-size: 12px;
+  line-height: 18px;
+  color: $text-lightgray;
+}
+
+
+@media (max-width: 767px) {
+  .title--h2 {
+    @include fontTitle(2.5rem);
+  }
+}

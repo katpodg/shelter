@@ -1,0 +1,32 @@
+.logo {
+  display: flex;
+  flex-direction: column;
+  font-family: Georgia,
+    'Times New Roman',
+    Times,
+    serif;
+  text-align: center;
+  min-width: 184px;
+  flex-shrink: 0;
+
+  &__link {
+    text-decoration: none;
+  }
+
+  &__title {
+    font-size: 3.2rem;
+    line-height: 3.5rem;
+    font-weight: 400;
+    letter-spacing: 0.06em;
+    margin: 0;
+    margin-bottom: 9px;
+  }
+
+  &__subtitle {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+    letter-spacing: 0.1em;
+    line-height: 1.5rem;
+  }
+}
