@@ -3,3 +3,18 @@
   padding: 0;
   list-style: none;
 }
+
+@mixin resetButton {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+}
+
+@mixin fontTitle($size, $height: 1.3em, $weight: 400, $family: (Georgia, 'Times New Roman', Times, serif), $spacing: 0.06em) {
+  font-family: $family;
+  font-size: $size;
+  line-height: $height;
+  font-weight: $weight;
+  letter-spacing: $spacing;
+}

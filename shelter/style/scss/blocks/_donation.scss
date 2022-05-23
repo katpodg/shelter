@@ -1,5 +1,5 @@
 .donation {
-  padding-top: 81px;
+  padding-top: 80px;
   padding-bottom: 100px;
   background-color: var(--light-bg);
 
@@ -11,7 +11,7 @@
   }
 
   &__img-wrapper {
-    padding-top: 11px;
+    align-self: center;
   }
 
   &__content {
@@ -21,11 +21,11 @@
 
   &__title {
     max-width: 300px;
-    margin-bottom: 20px;
+    margin-bottom: 19px;
   }
 
   &__subtitle {
-    margin-bottom: 21px;
+    margin-bottom: 20px;
   }
 
   &__button {

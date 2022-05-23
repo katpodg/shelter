@@ -25,6 +25,10 @@
   }
 }
 
+.nav--close {
+  display: none;
+}
+
 .nav--pets {
   $link: $gray;
   $link-hover: $gray-dark;
