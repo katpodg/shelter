@@ -19,6 +19,7 @@
   }
 
   &__title {
+    width: 100%;
     max-width: 310px;
     margin: 0;
     color: $white;
@@ -38,7 +39,7 @@
 
 @media (max-width: 1279px) {
   .not-only {
-    padding-top: 151px;
+    padding-top: 150px;
 
     &__wrapper {
       flex-direction: column;
@@ -61,6 +62,20 @@
 
     &__button {
       align-self: center;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .not-only {
+    text-align: center;
+
+    &__title {
+      max-width: 300px;
+    }
+
+    &__content {
+      margin-bottom: 105px;
     }
   }
 }
