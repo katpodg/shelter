@@ -131,7 +131,7 @@
   color: #545454;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 2rem;
-  line-height: 2.3rem;
+  line-height: 1.15em;
   font-weight: 400;
   letter-spacing: 0.06em;
 }
@@ -176,7 +176,7 @@
     letter-spacing: 0.06em;
   }
 
-  .title--h4 {
+  .title--h4:not(.contacts__link) {
     font-family: Georgia, "Times New Roman", Times, serif;
     font-size: 1.5rem;
     line-height: 1.7rem;
@@ -247,7 +247,13 @@
   }
 }
 @media (max-width: 767px) {
-  .slider, .slider-buttons, .slider-buttons__button {
+  .slider {
+    align-items: center;
+  }
+
+  .slider,
+.slider-buttons,
+.slider-buttons__button {
     position: static;
   }
 
@@ -328,7 +334,7 @@
   color: #ffffff;
 }
 .header__burger {
-  flex-grow: 2;
+  padding-right: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -830,10 +836,6 @@
 .footer__image {
   flex-shrink: 0;
 }
-.footer__image-puppy {
-  width: 300px;
-  height: 310px;
-}
 
 @media (max-width: 1279px) {
   .footer {
@@ -847,10 +849,30 @@
     align-self: center;
   }
   .footer__contacts {
-    padding: 0 0 65px;
+    padding: 0;
+    margin-bottom: 65px;
   }
   .footer__contacts-title {
     margin-bottom: 33px;
+  }
+}
+@media (max-width: 767px) {
+  .footer__wrapper {
+    padding: 0 3.2%;
+  }
+  .footer__contacts {
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+  .footer__contacts-title {
+    text-align: center;
+    margin-bottom: 39px;
+  }
+  .footer__item {
+    align-items: center;
+  }
+  .footer__item:first-child {
+    margin-bottom: 40px;
   }
 }
 .contacts {
@@ -889,7 +911,7 @@
   height: 32px;
 }
 .contacts__link {
-  max-width: 260px;
+  max-width: 258px;
   text-decoration: none;
   color: var(--color-primary);
 }
@@ -900,6 +922,17 @@
 @media (max-width: 1279px) {
   .contacts__item:first-child {
     margin-bottom: 33px;
+  }
+}
+@media (max-width: 767px) {
+  .contacts {
+    align-items: center;
+  }
+  .contacts__item:first-child {
+    margin-bottom: 40px;
+  }
+  .contacts__item--location:last-child {
+    align-self: flex-start;
   }
 }
 .our-pets {

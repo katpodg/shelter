@@ -13,7 +13,7 @@
   margin: 0;
   color: $title-dark;
 
-  @include fontTitle(2.0rem, 2.3rem);
+  @include fontTitle(2.0rem, 1.15em);
 }
 
 .title--h5 {
@@ -46,7 +46,7 @@
     @include fontTitle(2.5rem)
   }
 
-  .title--h4 {
+  .title--h4:not(.contacts__link) {
   @include fontTitle(1.5rem, 1.7rem);
   }
 }

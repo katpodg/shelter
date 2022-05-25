@@ -109,18 +109,19 @@
             </li>
           </ul>
           <div class="slider-buttons">
-            <div class="slider-buttons__btn-wrapper"><button class="slider-buttons__button slider-buttons__button--back">
+            <div class="slider-buttons__btn-wrapper"><button
+                class="slider-buttons__button slider-buttons__button--back">
                 <svg viewBox="0 0 14 6" class="slider-buttons__icon slider-buttons__icon--back">
                   <use xlink:href="icons/sprite.svg#slider-arrow"></use>
                 </svg>
               </button></div>
-            <div class="slider-buttons__btn-wrapper"><button class="slider-buttons__button slider-buttons__button--next">
+            <div class="slider-buttons__btn-wrapper"><button
+                class="slider-buttons__button slider-buttons__button--next">
                 <svg viewBox="0 0 14 6" class="slider-buttons__icon slider-buttons__icon--next">
                   <use xlink:href="icons/sprite.svg#slider-arrow"></use>
                 </svg>
-              </button></div>
-
-
+              </button>
+            </div>
           </div>
         </div>
         <a class="button our-friends__rest-button" href="pets.html">Get to know the rest</a>
@@ -241,9 +242,12 @@
         </div>
       </div>
       <div class="footer__image">
-        <img class="footer__image-puppy" src="img/footer-puppy.png" alt="Щенок" width="300" height="310">
+        <picture>
+          <source media="(max-width: 767px)" srcset="img/footer-puppy-mobile.png">
+          <source media="(min-width: 768px)" srcset="img/footer-puppy.png">
+          <img class="footer__image-puppy" src="img/footer-puppy.png">
+        </picture>
       </div>
-
     </div>
   </footer>
 </body>

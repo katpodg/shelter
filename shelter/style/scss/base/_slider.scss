@@ -76,7 +76,13 @@
 }
 
 @media (max-width: 767px) {
-  .slider, .slider-buttons, .slider-buttons__button  {
+  .slider {
+    align-items: center;
+  }
+
+  .slider,
+  .slider-buttons,
+  .slider-buttons__button {
     position: static;
   }
 
