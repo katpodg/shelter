@@ -62,3 +62,40 @@
     }
   }
 }
+
+@media (max-width: 767px) {
+  .donation {
+    padding: 42px 0;
+
+    &__wrapper {
+      gap: 0;
+      padding: 0 10px;
+    }
+
+    &__content {
+      padding: 0;
+      margin-bottom: 42px;
+    }
+
+    &__title {
+      text-align: center;
+    }
+
+    &__subtitle {
+      text-align: center;
+      line-height: 1.6em;
+      letter-spacing: normal;
+    }
+
+    &__button {
+      align-self: center;
+      width: max-content;
+      padding: 13px 15px 13px 60px;
+    }
+
+    &__text {
+      padding: 0 10px;
+      text-align: justify;
+    }
+  }
+}
