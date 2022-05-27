@@ -1,13 +1,15 @@
 .burger {
   @include resetButton;
-
+  @extend %transition;
+  display: none;
   width: 36px;
   height: 28px;
   position: relative;
-  display: none;
   justify-content: center;
 
-  &__line, &::after, &::before {
+  &__line,
+  &::after,
+  &::before {
     position: absolute;
     display: flex;
     width: 30px;
@@ -33,5 +35,13 @@
 @media (max-width: 767px) {
   .burger {
     display: flex;
+
+    &--open {
+      transform: rotate(90deg);
+    }
+
+    &--nojs {
+      display: none;
+    }
   }
 }

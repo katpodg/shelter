@@ -11,32 +11,29 @@
 </head>
 
 <body class="body">
-  <header class="header">
-    <div class="header__wrapper wrapper">
-      <div class="logo">
-        <a href="#" class="logo__link header__logo__link">
-          <h1 class="logo__title header__logo-title">Cozy House</h1>
-          <p class="logo__subtitle header__logo-subtitle">Shelter for pets in Boston</p>
-        </a>
+  <div class="header-container">
+    <header class="header">
+      <div class="header__wrapper wrapper">
+        <div class="logo header__logo logo-wrapper">
+          <a href="#" class="logo__link header__logo__link">
+            <h1 class="logo__title header__logo-title">Cozy House</h1>
+            <p class="logo__subtitle header__logo-subtitle">Shelter for pets in Boston</p>
+          </a>
+          <button class="header__burger burger" type="button">
+            <span class="burger__line"></span>
+          </button>
+        </div>
+        <nav class="nav header__nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a class="link link--active nav__link nav__link--active" href="index.html">About the
+                shelter</a></li>
+            <li class="nav__item"><a class="link nav__link" href="pets.html">Our pets</a></li>
+            <li class="nav__item"><a class="link nav__link" href="#help">Help the shelter</a></li>
+            <li class="nav__item"><a class="link nav__link" href="#contacts">Contacts</a></li>
+          </ul>
+        </nav>
       </div>
-      <div class="header__burger ">
-        <button class="burger" type="button">
-          <span class="burger__line"></span>
-        </button>
-      </div>
-
-      <nav class="nav nav--close nav--open">
-        <ul class="nav__list">
-          <li class="nav__item"><a class="link link--active nav__link nav__link--active" href="index.html">About the
-              shelter</a></li>
-          <li class="nav__item"><a class="link nav__link" href="pets.html">Our pets</a></li>
-          <li class="nav__item"><a class="link nav__link" href="#help">Help the shelter</a></li>
-          <li class="nav__item"><a class="link nav__link" href="#contacts">Contacts</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-  <main class="main-page">
+    </header>
     <section class="not-only">
       <div class="wrapper not-only__wrapper">
         <div class="not-only__content">
@@ -56,10 +53,12 @@
         </div>
       </div>
     </section>
+  </div>
+  <main class="main-page">
     <section class="about">
       <div class="wrapper about__wrapper">
         <div class="about__text-container">
-          <h2 class="title--h3 about__title">About the shelter &#8220;Cozy&nbsp;House&#8221;</h2>
+          <h2 class="title--h3 about__title">About the shelter<br>&#8220;Cozy House&#8221;</h2>
           <p class="text about__text">Currently we have 121 dogs and 342 cats on our hands and statistics show that only
             20% of them will find a family. The others will continue to live with us and will be waiting for a lucky
             chance to become dearly loved.</p>

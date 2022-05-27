@@ -1,35 +1,29 @@
 .not-only {
-  padding-top: 180px;
-  background-color: $bg-dark;
-  background-image: url('../../img/noise_transparent.png'),
-    linear-gradient(310deg, $gradient-darker 40%, $gradient-lighter 100%);
   color: var(--text-primary-light);
 
   &__wrapper {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
   }
 
   &__content {
-    max-width: 461px;
     padding-bottom: 80px;
     display: flex;
     flex-direction: column;
+    flex-basis: 39%;
   }
 
   &__title {
-    width: 100%;
-    max-width: 310px;
     margin: 0;
     color: $white;
     margin-bottom: 42px;
   }
 
   &__text {
-    width: 100%;
     margin: 0;
-    margin-bottom: 41px;
+    margin-bottom: 41.64px;
   }
 
   &__button {
@@ -39,17 +33,15 @@
 
 @media (max-width: 1279px) {
   .not-only {
-    padding-top: 150px;
 
     &__wrapper {
       flex-direction: column;
+      justify-content: flex-start;
     }
 
     &__content {
-      align-items: flex-start;
       padding-bottom: 0;
       margin-bottom: 100px;
-
     }
 
     &__img-container {
@@ -57,7 +49,7 @@
     }
 
     &__text {
-      width: 100%;
+      max-width: 460px;
     }
 
     &__button {
@@ -68,14 +60,9 @@
 
 @media (max-width: 767px) {
   .not-only {
-    text-align: center;
-
-    &__title {
-      max-width: 300px;
-    }
-
     &__content {
-      margin-bottom: 105px;
+      text-align: center;
+      margin-bottom: 104.39px;
     }
   }
 }

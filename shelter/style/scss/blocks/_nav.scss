@@ -1,18 +1,23 @@
 .nav {
-  flex-grow: 0.16;
-  flex-shrink: 1;
+  flex-grow: 1;
 
   &__list {
     @include listStyleReset;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     flex-wrap: wrap;
   }
 
+  &__item:not(.nav__item:last-child) {
+    margin-right: 35.9px;
+  }
+
   &__link {
-    color: $link;
-    width: max-content;
     @extend %transition;
+    @extend %link;
+    color: $link;
+    font-size: 1.5rem;
+    line-height: 1.6em;
 
     &:hover {
       color: $link-hover;
@@ -23,10 +28,6 @@
       border-bottom: 3px solid $border-link;
     }
   }
-}
-
-.nav--close {
-  display: none;
 }
 
 .nav--pets {
@@ -49,8 +50,30 @@
   }
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 767px) {
+
   .nav {
-  flex-grow: 0.58;
+    display: none;
+  }
+
+  .nav--open, .nav--nojs {
+    display: block;
+
+    .nav__list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .nav__item:not(.nav__item:last-child) {
+      margin: 0;
+      margin-bottom: 40px;
+    }
+
+    .nav__link {
+      font-size: 3.2rem;
+      line-height: 5.1rem;
+    }
   }
 }

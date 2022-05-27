@@ -1,32 +1,25 @@
+.header-container {
+  background-color: $bg-dark;
+  background-image: url('../../img/noise_transparent.png'),
+    linear-gradient(310deg, $gradient-darker 40%, $gradient-lighter 100%);
+}
+
 .header {
-  position: relative;
-  display: flex;
+  padding: 60px 0;
 
   &__wrapper {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 60px;
+    flex-wrap: wrap;
   }
 
-  &__logo-title {    
+  &__logo-title {
     color: $primary;
   }
 
-  &__logo-subtitle {    
+  &__logo-subtitle {
     color: $white;
-  }
-
-  &__burger {
-    padding-right: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 }
 
@@ -54,8 +47,35 @@
 
 @media (max-width: 1279px) {
   .header {
+    padding: 30px 0 60px;
+
+  }
+}
+
+@media (max-width: 767px) {
+  .header {
+    position: relative;
+
     &__wrapper {
-      top: 30px;
+      max-width: 100%;
+    }
+
+    .header__wrapper--open,
+    .header__wrapper--nojs {
+      background-color: $gray-dark;
+      position: absolute;
+      padding-top: 30px;
+      top: 0;
+      right: 0;
+      height: 86vh;
+      align-items: flex-start;
+      max-width: 320px;
+      overflow-y: scroll;
+    }
+
+    .header__wrapper--nojs {
+      position: relative;
+      background: none;
     }
   }
 }
